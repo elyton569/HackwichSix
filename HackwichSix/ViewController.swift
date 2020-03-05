@@ -24,10 +24,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let cell = tableView.dequeueReusableCell(withIdentifier:"cellReuseIdentifier")
         let text = myCountriesArray[indexPath.row]
         cell?.textLabel?.text = text
+        cell?.detailTextLabel?.text = myCountriesArray[indexPath.row]
         return cell!
-    
-    
-    }
+       }
    
     override func viewDidLoad() {
     super.viewDidLoad()
